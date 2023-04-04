@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +19,627 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*/
+/*  ASO FACIL A PARTIR DAQUI laranja #f48131 :: laranja escuro #d8722a :: chumbo #6e6f71*/
+
+html, body {
+    height: 100vh;
+  	width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+html, body, input, div, button, ul, li, a, b, table, tr, td {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	line-height: 210%;
+}
+
+body { 
+	animation: fadeInAnimation ease 3s; 
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards; 
+	overflow: hidden;
+} 
+
+@keyframes fadeInAnimation { 
+	0% { 
+		opacity: 0; 
+	} 
+	100% { 
+		opacity: 1; 
+	} 
+} 
+
+a, input, select, textarea, button, option {
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+select {
+  margin-top: 3px !important;
+}
+
+input, textarea, select, option {
+	padding: 5px;
+	-webkit-tap-highlight-color: transparent;
+	outline: none
+}
+
+a {
+	text-decoration: none;
+}
+
+mouseO:hover {
+  cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+  cursor: pointer;
+}
+
+input[type="date"], select {
+  width: 150px !important;
+  height: 30px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+#topo {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+}
+
+#topo a {
+	margin-right: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #d8722a;
+    display: inline-block;
+}
+
+#conteudo {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: calc(100% - 140px);
+	left: 0px;
+	top: 50px;
+  overflow-y:auto !important;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 90px;
+	background-color: #6e6f71;
+	color: #fff;
+}
+
+#footer p {
+  margin: 0 !important;
+	margin-left: 10px !important;
+}
+
+.littlebtn {
+	background-color: #f48131 !important; 
+	border-radius: 8px !important;
+	width: 70px !important;
+	height: 40px !important;
+	position: relative !important;
+	display: inline-block !important;
+	margin: 0 auto !important;
+	border: 0 !important;
+	color: #fff !important;
+	font-size: 14px !important;
+}
+
+.littlebtn:hover {
+	background-color: #d8722a;
+	cursor: pointer;
+}
+
+
+input[type="button"], input[type="submit"] {
+	background-color: #f48131;
+	border-radius: 8px;
+	width: 100px;
+	height: 40px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+}
+
+.bigButton {
+	width: 200px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, bigButton:hover {
+	background-color: #d8722a;
+	cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+	width: 294px;
+	height: 35px;
+	border: 0px;
+	border-bottom: 1px solid #6e6f71;
+
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+	background-color: #fcf8c2;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.03), inset 0px 4px 3px -2px rgba(0,0,0,.07);
+	box-shadow: 0px 0px 6px 1px #CCC;
+}
+
+#crm_medico {
+	width: 150px;
+	height: 35px;
+	border: 0px;
+	border-bottom: 1px solid #6e6f71;
+}
+
+
+label {
+	background-color: #f48131;
+	border-radius: 8px;
+	width: 180px;
+	height: 30px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	padding-top: 3px;
+}
+
+label:hover {
+	background-color: #d8722a;
+	cursor: pointer;
+}
+
+.imageThumb {
+	width: 50px !important;
+	height: 50px !important;
+	border: 1px solid #CCC !important;
+ 	margin: 10px 10px 0 0 !important;
+ 	padding: 1px !important;
+ 	display: inline-block !important;
+   	position: relative !important;
+	z-index: 1 !important;
+}
+
+#enviar {
+	display: none;
+}
+
+#progressBar {
+	    position: relative;
+	    background: linear-gradient(135deg, rgb(34, 130, 227) 0%, rgb(9, 226, 51) 100%);
+	    height: 16px;
+	    width: 0;
+	    line-height: 16px;
+	    color: #fff;
+	    font-size: 1em;
+	    overflow: hidden;
+}
+
+#return {
+	    font-size: 1em;
+	    font-weight: bold;
+	    margin-bottom: 5px;
+}
+
+#loading, #alerta {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+	transition: 0.5s;
+	display: none;
+}
+
+#loading {
+  z-index: 2 !important;
+}
+
+#alerta {
+  z-index: 1 !important;
+}
+
+#loading div{
+	display: block;
+	position: fixed;
+	left: calc(50% - 100px);
+	top: calc(50% - 50px);
+	width: 200px;
+	height: 100px;
+	background-color: #fff;
+	z-index: 1;
+	text-align: center;
+}
+
+#alerta div {
+  display: block;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  z-index: 1;
+  text-align: center;
+}
+
+#alerta img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#alerta input {
+  display:inline-block;
+  margin: 5px;
+}
+
+/* Telefones finos */
+@media screen and (max-width: 316px) { 
+     #topo img {
+		height: 110px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#info {
+		width: 90%;
+		height: auto;
+		
+		display: block;
+		top: 10px;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 20px !important;
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+		padding: 10px;
+	}
+
+  #login {
+		width: 90%;
+		height: auto;
+		
+		display: block;
+		top: 80px;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 20px !important;
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+		padding: 10px;
+	}
+	
+	#imgPreview {
+	 	width: 90% !important;
+	 	border: 0px !important;
+	 	margin: 0 auto;
+	}
+	
+	input[type="text"], input[type="password"] {
+		width: 255px;
+		height: 35px;
+    border: 0px;
+		border-bottom: 1px solid #6e6f71;
+	}
+	
+	input[type="text"]:focus, input[type="password"]:focus {
+		background-color: #fcf8c2;
+		box-shadow: inset 0 0 0 1px rgba(0,0,0,.03), inset 0px 4px 3px -2px rgba(0,0,0,.07);
+		box-shadow: 0px 0px 8px 2px #CCC;
+	}
+
+ }
+ 
+/* Telefones em paisagem e abaixo */
+@media screen and (min-width: 317px) and (max-width: 480px) { 
+     #topo img {
+		height: 110px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#info {
+		width: 90%;
+		height: auto;
+		
+		display: block;
+		top: 10px;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 20px !important;
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+		
+		padding: 10px;
+	}
+
+  #login {
+		width: 90%;
+		height: auto;
+		
+		display: block;
+		top: 80px;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 20px !important;
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+		
+		padding: 10px;
+	}
+	
+	#imgPreview {
+	 	width: 90% !important;
+	 	border: 0px !important;
+	 	margin: 0 auto;
+	}
+
+	input[type="text"], input[type="password"] {
+		width: 91%;
+		height: 30px;
+		margin-bottom: 3px;
+		border: 0px;
+		border-bottom: 1px solid #6e6f71;
+	}
+	
+	input[type="text"]:focus, input[type="password"]:focus {
+		background-color: #fcf8c2;
+		box-shadow: inset 0 0 0 1px rgba(0,0,0,.03), inset 0px 4px 3px -2px rgba(0,0,0,.07);
+		box-shadow: 0px 0px 8px 2px #CCC;
+	}
+ }
+
+/* Telefones em paisagem a tablet em retrato */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+     #topo img {
+		height: 110px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#info {
+		width: 90%;
+		height: auto;
+		
+		display: block;
+		top: 10px;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 20px !important;
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+		
+		padding: 10px;
+	}
+
+  #login {
+		width: 90%;
+		height: auto;
+		
+		display: block;
+		top: 80px;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 20px !important;
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+		
+		padding: 10px;
+	}
+	
+	#imgPreview {
+	 	width: 90% !important;
+	 	border: 0px !important;
+	 	margin: 0 auto;
+	}
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media screen and (min-width: 768px) and (max-width: 979px) {
+     #topo img {
+		height: 110px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#info {
+		width: 90%;
+		height: auto;
+		
+		display: block;
+		top: 10px;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 20px !important;
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+		
+		padding: 10px;
+	}
+
+  #login {
+		width: 90%;
+		height: auto;
+		
+		display: block;
+		top: 80px;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 20px !important;
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+		
+		padding: 10px;
+	}
+	
+	#imgPreview {
+	 	width: 90% !important;
+	 	border: 0px !important;
+	 	margin: 0 auto;
+	}
+
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    #topo img {
+		height: 130px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#info {
+		width: 50%;
+		height: auto;
+		
+		display: block;
+		top: 10px;
+		position: relative;
+		margin: 0 auto;
+    margin-bottom: 20px !important;
+		padding: 10px;
+		
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+	}
+
+  #login {
+		width: 50%;
+		height: auto;
+		
+		display: block;
+		top: 80px;
+		position: relative;
+		margin: 0 auto;
+    margin-bottom: 20px !important;
+		padding: 10px;
+		
+		border: 1px solid #f48131;
+		border-radius: 8px;
+		text-align: center;
+		
+		font-size: 14px;
+	}
+	
+	#imgPreview {
+	 	width: 90% !important;
+	 	border: 0px !important;
+	 	margin: 0 auto;
+	}
+
+}
+
+.close{
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  right: -288px;
+  top: -12px;
+  float: left;
+  border-radius: 2;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: red;
+  color: fff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.fa-chevron-circle-left {
+  cursor: pointer;
+}
+
+.clicavel {
+  background: transparent !important;
+  width: fit-content !important;
+  height: fit-content !important;
+  border-radius: 1px !important;
+  overflow: hidden !important;
+  margin: 0px !important;
+  cursor: pointer;
+  z-index: 1 !important;
+  margin: 10px 10px 0 0 !important;
+  padding: 1px !important;
+  display: inline-block !important;
+  position: relative !important;
+}
+
+.pdf {
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
 }
