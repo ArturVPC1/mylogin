@@ -72,21 +72,59 @@ a {
 	text-decoration: none;
 }
 
-mouseO:hover {
-  cursor: pointer;
+
+#header_title
+{
+  font-weight: bolder;
+  text-align: center;
 }
 
+#header_photo
+{
+  display: none;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+#header_photo img {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+}
+
+.floatingimage
+{
+  float: right;
+}
+
+@media all and (max-width: 1024px)
+{
+ #header_title
+ {
+    margin-left: 10%;
+    min-width: 67%;
+    max-width: 77%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+ }
+
+  #header_photo
+  {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 20%;
+    height: auto;
+  }
+ }
+
+ 
 a:hover {
 	text-decoration: underline;
   cursor: pointer;
 }
 
-input[type="date"], select {
-  width: 150px !important;
-  height: 30px;
-  margin-left: 2px;
-  margin-top: 2px;
-}
 
 #topo {
 	position: fixed;

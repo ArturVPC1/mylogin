@@ -1,32 +1,49 @@
-#login{
+.logoSuperior {
+    width: 20%;
+    height: 20%;
+}
+
+/*.buttonEntrar {
+    background-color: #f48131;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+}*/
+
+#login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 35vh;
     padding: 0 2rem;
 }
 
-#login .form{
-    background-color: #f1f1f1;
+#login .form {
     width: 100%;
     max-width: 480px;
     padding: 0.5rem;
 }
 
-#login .field{
+#login .field {
     padding-bottom: 0.5rem;
 }
 
-#login .field label{
+#login .field label {
     display: block;
 }
 
-#login .field input{
+#login .field input {
     width: 100%;
 }
 
-#login .actions{
+#login .actions {
     text-align: center;
     margin-top: 0.5rem;
 
